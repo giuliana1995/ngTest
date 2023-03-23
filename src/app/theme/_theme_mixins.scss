@@ -1,0 +1,57 @@
+@import "theme_colors";
+
+@mixin theme-light {
+  background-color: $bg-light;
+  color: $color-light;
+}
+
+@mixin form-dark {
+  background-color: $bg-form-dark;
+  color: $color-dark;
+  border-radius: 15px;
+  margin-right: 48px;
+}
+
+@mixin form-light {
+  background-color: $bg-form-light;
+  color: $color-light;
+  border-radius: 15px;
+  margin-right: 48px;
+}
+
+@mixin theme-dark {
+  background-color: $bg-dark;
+  color: $color-dark;
+}
+
+@mixin header-property() {
+  padding: 20px;
+  font-size: large;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+@mixin btnNavBar() {
+  display: flex;
+  align-items: center;
+  margin-left: 55px;
+  font-family: fantasy;
+}
+
+@mixin form-property() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 15px;
+}
+
+@mixin footer-property() {
+  padding: 20px;
+  font-size: large;
+  height: 8vh;
+}

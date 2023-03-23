@@ -1,0 +1,46 @@
+@import "../../theme/theme_common"; 
+ 
+  
+  .theme-dark {
+    @include header-property();
+    @include theme-dark();
+    .link {
+      color: #33bcd9;
+    }
+    .link:hover {
+      color: rgb(73, 70, 70);
+    }
+  }
+  
+  .theme-light {
+    @include header-property();
+    @include theme-light();
+    .link {
+      color: black;
+    }
+    .link:hover {
+      color: #34a6bd;
+    }
+  }
+
+  .btnNavbar {
+    @include btnNavBar(); 
+    
+    .info {
+      padding: 50px;
+    }
+    .link {
+      font-size: 20px;
+      text-decoration: none;
+    } 
+  }
+
+.icon {
+  padding: 20px;
+  cursor: pointer;
+  mat-icon {
+    padding: 5px;
+    font-size: 28px;
+  }
+}
+

@@ -1,0 +1,51 @@
+<div [ngClass]="formTheme">
+    <form [formGroup]="form">
+      <div class="titolo">
+        <label class="form-label">Titolo:</label>
+        <input
+          placeholder="titolo"
+          class="form-control"
+          [formControl]="titolo"
+          (ngModelChange)="checkForDisabled()"
+        />
+      </div>
+  
+      <div class="article">
+        <label class="form-label">Article:</label>
+        <input
+          placeholder="article"
+          class="form-control"
+          [formControl]="surname"
+          (ngModelChange)="checkForDisabled()"
+        />
+      </div>
+  
+      <div class="email">
+        <label class="form-label">email:</label>
+        <input
+          placeholder="email"
+          class="form-control"
+          [formControl]="email"
+          (ngModelChange)="checkForDisabled()"
+        />
+      </div>
+  
+      <div class="telephoneNumber">
+        <label class="form-label">phone:</label>
+        <input
+          placeholder="phone number"
+          class="form-control"
+          minlength="10"
+          [formControl]="telephoneNumber"
+          (ngModelChange)="checkForDisabled()"
+        />
+      </div>
+
+      <div>
+        <button type="submit" class="button" [disabled]="isDisabled" (click)="postMyForm()">
+          invia
+        </button>
+      </div>
+    </form>
+  </div>
+  

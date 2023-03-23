@@ -1,0 +1,25 @@
+@import "../../theme/theme_common";
+
+.theme-dark {
+  @include theme-dark();
+  @include footer-property();
+}
+
+.theme-light {
+  @include theme-light();
+  @include footer-property();
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  .icon {
+    width: 33px;
+    border-radius: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .icon:hover {
+    transform: scale(1.2);
+  }
+}

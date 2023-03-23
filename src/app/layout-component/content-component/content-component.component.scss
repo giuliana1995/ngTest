@@ -1,0 +1,21 @@
+@import "../../theme/theme_common";
+
+:host {
+  flex-grow: 5;
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  justify-content: center;
+  background-color: rgb(247, 241, 241);
+}
+
+/* .theme-dark { */
+/*   @include card(); */
+/*   @include dark-theme(); */
+/* } */
+/*  */
+/* .theme-light { */
+/*   @include card(); */
+/*   @include light-theme(); */
+/* } */
+/*  */
